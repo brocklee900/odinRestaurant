@@ -1,5 +1,8 @@
 import "./styles.css";
-import { createHomepage } from "./homePage.js";
+import { createHomePage } from "./homePage.js";
+import { createMenuPage } from "./menuPage.js";
+
 
 console.log("holy moly");
-createHomepage();
+//createHomePage();
+createMenuPage();

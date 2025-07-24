@@ -70,13 +70,10 @@ div#content > #contentCards {
 
 }
 
-#contentCards > .card {
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 300px;
-    height: 300px;
 
     background-color: var(--inner-card-color);
     border-radius: var(--inner-radius);
@@ -84,6 +81,11 @@ div#content > #contentCards {
 
     padding: 20px;
     font-size: 1.5rem;
+}
+
+#contentCards > .card {
+    width: 300px;
+    height: 300px;
 }
 
 #contentCards > #about {
@@ -106,4 +108,63 @@ div#content > #footer {
     border-bottom-left-radius: var(--outer-radius);
     border-bottom-right-radius: var(--outer-radius);
     box-shadow: 0px -2px 2px 0px var(--shadow-color);
+}
+
+div#content > #menuGrid {
+    flex: 1;
+
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+
+    padding: 0px 50px;
+
+    font-size: 3rem;
+}
+
+#menuGrid > #mainMenu {
+    grid-row: 1 / 7;
+    grid-column: 1 / 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#menuGrid > #sideMenu {
+    grid-row: 1 / 4;
+    grid-column: 2 / 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#menuGrid > #drinkMenu {
+    grid-row: 4 / 7;
+    grid-column: 2 / 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menuItem {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0px 30px;
+    
+    border-bottom: 1px solid white;
+}
+
+.menuItem > .item {
+    font-size: 2rem;
+}
+
+.menuItem > .price {
+    font-size: 1.5rem;
 }

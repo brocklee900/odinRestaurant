@@ -1,14 +1,8 @@
 
-import foodImage from "./rachel-park-hrlvr2ZlUNk-unsplash.jpg"
+import foodImage from "./rachel-park-hrlvr2ZlUNk-unsplash.jpg";
+import { createElementWithText } from "./helperFunc";
 
-
-function createElementWithText(element, text, parent) {
-    let temp = document.createElement(element);
-    temp.textContent = text;
-    parent.appendChild(temp);
-}
-
-const createHomepage = function () {
+const createHomePage = function () {
     const contentDiv = document.querySelector("div#content");
 
     //Create Title/Header
@@ -67,4 +61,4 @@ const createHomepage = function () {
     contentDiv.appendChild(footerDiv);
 }
 
-export {createHomepage};
+export {createHomePage};
