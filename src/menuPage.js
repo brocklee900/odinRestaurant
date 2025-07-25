@@ -2,7 +2,6 @@
 import { createElementWithText, createMenuItem, createBoldItalicText } from "./helperFunc";
 
 const createMenuPage = function () {
-
     
     const contentDiv = document.querySelector("div#content");
     
@@ -65,7 +64,6 @@ const createMenuPage = function () {
     createElementWithText("p", "More cool bottom text", footerDiv);
 
     contentDiv.appendChild(footerDiv);
-    
 
 };
 

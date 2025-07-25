@@ -27,6 +27,7 @@ nav > button {
 div#content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 50px;
 
     background-color: rgb(148, 148, 255);
@@ -101,7 +102,6 @@ div#content > #footer {
     display: flex;
     justify-content: space-evenly;
 
-    margin-top: auto;
     padding: 20px 0px;
 
     background-color: var(--inner-card-color);
@@ -167,4 +167,13 @@ div#content > #menuGrid {
 
 .menuItem > .price {
     font-size: 1.5rem;
+}
+
+#contacts {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    padding: 50px;
 }
