@@ -30,4 +30,10 @@ const createBoldItalicText = function(text, parent) {
     parent.appendChild(title);
 }
 
-export {createElementWithText, createMenuItem, createBoldItalicText};
+const updateButtons = function (toDisable, toActive, buttons) {
+    buttons[toActive].disabled = false;
+    buttons[toDisable].disabled = true;
+    return toDisable;
+};
+
+export {createElementWithText, createMenuItem, createBoldItalicText, updateButtons};

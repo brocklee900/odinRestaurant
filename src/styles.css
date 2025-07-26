@@ -17,11 +17,21 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 15px;
 }
 
 nav > button {
+    font-size: 1.5rem;
     height: 100px;
     width: 200px;
+    background-color: rgb(88, 88, 168);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+}
+
+nav > button:disabled {
+    background-color: rgb(24, 24, 133);
 }
 
 div#content {
