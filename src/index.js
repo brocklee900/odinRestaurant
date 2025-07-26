@@ -4,7 +4,33 @@ import { createMenuPage } from "./menuPage.js";
 import { createContactPage } from "./contactPage.js";
 
 
-console.log("holy moly");
-//createHomePage();
-//createMenuPage();
-createContactPage();
+
+createHomePage();
+const contentDiv = document.querySelector("#content");
+
+//Homebutton
+document.querySelector("#homebtn").addEventListener("click", function (e) {
+    while (contentDiv.lastElementChild) {
+        contentDiv.removeChild(contentDiv.lastElementChild);
+    };
+
+    createHomePage();
+});
+
+//Menubutton
+document.querySelector("#menubtn").addEventListener("click", function (e) {
+    while (contentDiv.lastElementChild) {
+        contentDiv.removeChild(contentDiv.lastElementChild);
+    };
+
+    createMenuPage();
+})
+
+//Contactbutton
+document.querySelector("#contactbtn").addEventListener("click", function (e) {
+    while (contentDiv.lastElementChild) {
+        contentDiv.removeChild(contentDiv.lastElementChild);
+    };
+
+    createContactPage();
+})
